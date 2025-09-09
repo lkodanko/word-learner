@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Learner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50"/>
+</head>
+<body>
+    <header>
+        <h1 data-i18n="title">Word Learner</h1>
+        <div class="settings">
+            <div class="select-wrapper">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+            <div class="select-wrapper">
+                <select id="length-select">
+                    <option value="3">3 Letters</option>
+                    <option value="4">4 Letters</option>
+                    <option value="5" selected>5 Letters</option>
+                    <option value="6">6 Letters</option>
+                </select>
+            </div>
+            <button id="new-game-btn" data-i18n="newGame">New Game</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="game-board"></div>
+        <div id="message-center"></div>
+    </main>
+    
+    <div id="keyboard"></div>
+
+    <script src="words/en.js"></script>
+    <script src="words/es.js"></script>
+    <script src="words/fr.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
