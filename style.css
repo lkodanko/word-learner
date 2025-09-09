@@ -44,7 +44,7 @@ select, button {
 #game-board {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    gap: 100%; /* CHANGED: Increased gap for better row separation */
+    gap: 100px; /* CHANGED: Increased gap for better row separation */
     padding: 20px;
 }
 
